@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>react</title>
+<body>
+  <script>
+  class Dog{
+    constructor(size,age,color){
+    this.dogsize=size;
+    this.dogage=age;
+    this.dogcolor=color;
+  }
+  run(){
+  document.write('my dog size is'+" "+this.dogsize+"."+"<br>"+
+'my dog age is'+" "+this.dogage+"."+"<br>"+'my dog color is'+" "+this.dogcolor+".");
+}
+}
+  dog=new Dog("Large",14,"brown");
+document.write(dog.dogsize+"<br>");
+document.write(dog.dogage+"<br>");
+document.write(dog.dogcolor+"<br>");
+dog.run();
+  </script>
+<br><br>
+  <script>
+  class Animal{
+    constructor(speed,name){
+      this.animal_speed=speed;
+      this.animal_name=name;
+    }
+    run(){
+      document.write("print the"+" "+ this.animal_name+" "+"with"+" "+this.animal_speed+" "+"speed")
+    }
+  }
+  animal= new Animal("50m/s","Tiger")
+  document.write(animal.animal_speed +"<br>");
+  document.write(animal.animal_name +"<br>");
+  animal.run();
+  </script>
+  <br><br>
+  <script>
+  class Rabbit{
+    constructor(speed,name){
+     this.rabbit_speed=speed;
+     this.rabbit_name=name;
+    }
+    run(){
+      document.write("Print the name is"+" " +this.rabbit_name+" "+"with"+" "+this.rabbit_speed+" "+"speed"+"."+"<br>")
+    }
+    hide(){
+      document.write("print the speed is"+" "+this.rabbit_speed+".")
+    }
+  }
+  rabbit=new Rabbit("60m/s","Black rabbit");
+  document.write(rabbit.rabbit_name+"<br>");
+  rabbit.run();
+  rabbit.hide();
+  </script>
+
+
+</body>
+</html>
